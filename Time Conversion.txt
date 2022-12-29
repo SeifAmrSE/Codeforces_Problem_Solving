@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int sec,hours,mint;
+   cin>>sec;
+
+   hours = sec/3600;
+   sec = sec - (hours * 3600);
+   mint = sec / 60;
+   sec = sec - (mint*60);
+
+   cout<<hours<<":"<<mint<<":"<<sec;
+
+    return 0;
+}
