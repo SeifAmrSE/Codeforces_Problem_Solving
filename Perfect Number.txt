@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int n,x,count=0;
+  cin>>n;
+
+while(n--)
+{
+
+
+      cin>>x;
+      count=0;
+
+for(int i = 1;i<=x/2;i++)
+{
+    if(x%i==0)
+    {
+        count+=i;
+    }
+}
+    if(count==x)
+        cout<<"YES"<<endl;
+
+    else
+        cout<<"NO"<<endl;
+}
+
+}
+
+
