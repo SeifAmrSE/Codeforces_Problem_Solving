@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int n=1,pos=0,x;
+
+   while(n<=6)
+   {
+       cin>>x;
+
+       if(x>0 && x!=0)
+       pos++;
+
+       n++;
+   }
+
+cout<<pos<<endl;
+
+}

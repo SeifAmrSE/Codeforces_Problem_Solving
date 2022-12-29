@@ -1,0 +1,30 @@
+
+#include<iomanip>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double A,B,C,pi = 3.14159,x,y,z,d,e;
+	cin >> A >> B >> C;
+
+	x = 0.5 * A * C;        //triangle
+
+	y = pi * C * C ;          //circle
+
+	z = ((A + B) / 2) * C;      //trapeizum
+
+	d = B * B;                //square
+
+	e = A * B;                //rectangle
+	
+	cout << fixed << setprecision(3) << "TRIANGLE: " << x << endl;
+	cout << fixed << setprecision(3) << "CIRCLE: " << y << endl;
+	cout << "TRAPEZIUM: " << z << endl;
+	cout << fixed << setprecision(3) <<"SQUARE: " << d << endl;
+	cout <<  fixed << setprecision(3) <<"RECTANGLE: " << e << endl;
+
+
+	return 0;
+}
+	

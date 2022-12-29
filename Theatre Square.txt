@@ -1,0 +1,23 @@
+
+
+#include <cmath>
+#include <iostream>
+using namespace std;
+
+ int main()
+{
+		long long n, m, a,x,y;
+		cin >> n >> m >> a;
+
+		x = m / a;
+		if (m % a != 0) 
+		x++;
+
+		y = n / a;
+		if (n % a != 0) 
+		y++;
+		
+		cout << x * y << endl;
+
+		return 0;
+}

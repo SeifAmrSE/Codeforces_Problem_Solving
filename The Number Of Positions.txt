@@ -1,0 +1,20 @@
+
+
+#include<algorithm>
+#include <iostream>
+using namespace std;
+
+int main()
+{                                             
+	int n, a, b,m,z,l;
+	cin >> n >> a >> b;
+
+	m = n - a;
+	z = b + 1;
+
+	l = min(m, z);
+	cout << l << endl;
+
+
+}
+

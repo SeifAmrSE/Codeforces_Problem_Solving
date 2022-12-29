@@ -1,0 +1,46 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	    long long a, b, c, x = 0, y = 0, d = 0, e = 0, l = 0, m = 0, z = 0 , n = 0;
+		cin >> a >> b >> c;
+
+		l = a + b + c;
+		m = a * b * c;
+		d = a + b * c;
+		e = a * b + c;
+		x = a + (b * c);
+		z = (a + b) * c;
+		y = a * (b + c);
+		n = (a * b) + c;   
+
+		if (l >= m && l >= d && l >= e && l >= x && l >= y && l >= z && l >= n)
+			cout << l << endl;
+
+		else if (m >= l && m >= d && m >= e && m >= x && m >= y && m >= z && m >= n)
+			cout << m << endl;
+
+		else if (d >= l && d >= m && d >= e && d >= x && d >= y && d >= z && d >= n)
+			cout << d << endl;
+
+		else if (e >= l && e >= m && e >= d && e >= x && e >= y && e >= z && e >= n)
+			cout << e << endl;
+
+		else if (x >= l && x >= m && x >= d && x >= e && x >= y && x >= z && x >= n)
+			cout << x << endl;
+
+		else if (y >= l && y >= m && y >= d && y >= e && y >= x && y >= z && y >= n)
+			cout << y << endl;
+
+		else if (z >= l && z >= m && z >= d && z >= e && z >= x && z >= y && z >= n)
+			cout << z << endl;
+
+		else if (n >= l && n >= m && n >= d && n >= e && n >= x && n >= z && n >= y)
+			cout << n << endl;
+
+		return 0;
+}
+
+

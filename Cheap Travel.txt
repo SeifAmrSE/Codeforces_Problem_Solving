@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{                                             
+	int ride, card, tick_price,card_price;
+	cin >> ride >> card >> tick_price >> card_price;
+
+	if (card * tick_price <= card_price)
+
+		cout<<ride * tick_price<<endl;
+		
+		else
+		cout << (ride / card) * card_price + min ((rides % card) * tick_price , card_price) <<endl;	
+}
+
+   

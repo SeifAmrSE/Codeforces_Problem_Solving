@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int c1,c2,c3,c4,c5,d;
+   float b;
+   cin>>c1>>c2>>c3>>c4>>c5;
+
+   b = (c1+c2+c3+c4+c5)/5.0;
+   d = b;
+
+   if(b == 0 || b-d > 0)
+    cout<<-1;
+    
+   else
+    cout<<b;
+
+
+    return 0;
+}

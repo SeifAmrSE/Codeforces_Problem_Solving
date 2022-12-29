@@ -1,0 +1,30 @@
+
+
+
+
+
+
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+   int n,x,puppets;
+   float y;
+   cin>>n>>x>>y;
+
+   puppets = ceil(n*y/100);
+
+   if(x>puppets)
+    cout<<0;
+
+   else
+   {
+
+
+    puppets-=x;
+    cout<<puppets;
+}
+    return 0;
+}
