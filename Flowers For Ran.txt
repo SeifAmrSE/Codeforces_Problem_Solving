@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	long long M, P;
+	cin >> M >> P;
+
+	if (M > P)
+		cout << (M + P) - M << endl;
+
+	else if (M < P)
+		cout << (M + P) - P << endl;
+
+	
+
+
+   return 0;
+}
+
+
+
+}

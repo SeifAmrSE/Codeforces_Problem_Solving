@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double n;
+	cin >> n;
+
+	cout << "NOTAS:\n";
+	cout << int(n / 100) << " nota(s) de R$ 100.00\n";               // casting
+	n = n - 100 * int(n / 100);
+
+	cout << int(n / 50) << " nota(s) de R$ 50.00\n";               // casting
+	n = n - 50 * int(n / 50);
+	
+	cout << int(n / 20) << " nota(s) de R$ 20.00\n";               // casting
+	n = n - 20 * int(n / 20);
+    
+	cout << int(n / 10) << " nota(s) de R$ 10.00\n";               // casting
+	n = n - 10 * int(n / 10);
+
+	cout << int(n / 5) << " nota(s) de R$ 5.00\n";               // casting
+	n = n - 5 * int(n / 5);
+
+	cout << int(n / 2) << " nota(s) de R$ 2.00\n";               // casting
+	n = n - 2 * int(n / 2);
+
+	cout << "MOEDAS:\n";
+	cout << int(n / 1) << " moeda(s) de R$ 1.00\n";               // casting
+	n = n - 1 * int(n / 1);
+
+	cout << int(n / 0.50) << " moeda(s) de R$ 0.50\n";               // casting
+	n = n - 0.50 * int(n / 0.50);
+
+	cout << int(n / 0.25) << " moeda(s) de R$ 0.25\n";               // casting
+	n = n - 0.25 * int(n / 0.25);
+
+	cout << int(n / 0.10) << " moeda(s) de R$ 0.10\n";               // casting
+	n = n - 0.10 * int(n / 0.10);
+
+	cout << int(n / 0.05) << " moeda(s) de R$ 0.05\n";               // casting
+	n = n - 0.05 * int(n / 0.05);
+
+	cout << int(n / 0.01) << " moeda(s) de R$ 0.01\n";               // casting
+	n = n - 0.01 * int(n / 0.01);
+
+	return 0;
+}
+

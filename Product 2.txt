@@ -1,0 +1,20 @@
+
+#include<cmath>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	long long y,x;
+	cin >> y;
+
+	x = sqrt(y);
+
+	if ((x * (x + 1)) == y)
+		cout << x << ' ' << x + 1 << endl;
+
+	else
+		cout << "-1 \n";
+
+
+   return 0;

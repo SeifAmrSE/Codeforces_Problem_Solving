@@ -1,0 +1,19 @@
+
+	
+#include <iomanip>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+	int a, b;
+	double c, z;
+	cin >> a >> b >> c;
+
+	cout << a << endl;
+
+	cout << fixed << setprecision(2) << b * c << endl;
+
+	return 0;
+}

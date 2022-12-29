@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+	long long a, b, c, d;
+	cin >> a >> b >> c >> d;
+ 
+	if (a < b && a < c && a < d)
+		cout << "A \n";
+ 
+	else if (b < a && b < c && b < d)
+		cout << "B \n";
+ 
+	else if (c < a && c < b && c < d)
+		cout << "C \n";
+ 
+	else if (d < a && d < b && d < c)
+		cout << "D \n";
+ 
+	else
+		cout << "Equal \n";
+ 
+	return 0;
+}

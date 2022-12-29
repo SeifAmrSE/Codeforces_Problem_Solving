@@ -1,0 +1,15 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	long long P1, P2;
+	cin >> P1 >> P2;
+
+	cout << P1 + P2 << endl;
+
+
+   return 0;
+}
+

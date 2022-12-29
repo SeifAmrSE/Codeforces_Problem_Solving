@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cin >> n;
+
+	cout << (n * (n + 1)) / 2 << endl;
+	
+}
+
+// power.... 2 (n(n+1)(2n+1)/6);
+
+// power 3 .....(n power 2(n+1) * (n+1)/4)

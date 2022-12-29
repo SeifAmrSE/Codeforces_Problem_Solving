@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	long long N, M,O,L;
+	cin >> N >> M;
+
+	O = N + M;
+	L = (O % 10);
+
+	cout << L << endl;
+
+	return 0;
+}
+
