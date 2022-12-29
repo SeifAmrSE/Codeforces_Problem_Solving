@@ -1,0 +1,35 @@
+#include <iostream>
+#include <map>
+#include <string>
+using namespace std;
+
+int main()
+{
+   map<string,long long>mp;
+   string name;
+   long long n,money,q;
+   cin>>n>>q;
+
+   while(n--)
+   {
+       cin>>name>>money;
+       mp[name] = money;
+   }
+
+   while(q--)
+   {
+       int t;
+       cin>>t>>name;
+
+       if(t==1)
+       {
+           cin>>money;
+           mp[name]+=money;
+       }
+
+       else if(t==2)
+       {
+           cout<<mp[name]<<endl;
+       }
+   }
+}

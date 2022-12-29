@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    vector<int>v;
+    int n,k,y,times=0,teams=0,cnt=0;
+    cin>>n>>k;
+
+    for(int i=0;i<n;i++)
+    {
+        cin>>y;
+        v.push_back(y);
+
+        times=abs(k-5);
+
+        if(v[i]<=times)
+            cnt++;
+    }
+
+    teams = cnt/3;
+
+    cout<<teams<<endl;
+}

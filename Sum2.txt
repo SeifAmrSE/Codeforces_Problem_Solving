@@ -1,0 +1,22 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,sum=0;
+    char s[(int)1e6+6];
+    cin>>n>>s;
+
+    for(int i = 0;i<n;i++)
+    {
+        sum+=s[i]-'0';
+
+    }
+ cout<<sum;
+
+
+}
+
+

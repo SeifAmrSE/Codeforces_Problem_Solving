@@ -1,0 +1,38 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n, a, b, c, d, e, f, g, h, i, j, k, l;
+	cin >> n;
+
+	a = n * 1;
+	b = n * 2;
+	c = n * 3;
+	d = n * 4;
+	e = n * 5;
+	f = n * 6;
+	g = n * 7;
+	h = n * 8;
+	i = n * 9;
+	j = n * 10;
+	k = n * 11;
+	l = n * 12;
+
+	if (n)
+	cout << n << " * 1 = " << a << endl;
+	cout << n << " * 2 = " << b << endl;
+	cout << n << " * 3 = " << c << endl;
+	cout << n << " * 4 = " << d << endl;
+	cout << n << " * 5 = " << e << endl;
+	cout << n << " * 6 = " << f << endl;
+	cout << n << " * 7 = " << g << endl;
+	cout << n << " * 8 = " << h << endl;
+	cout << n << " * 9 = " << i << endl;
+	cout << n << " * 10 = " << j << endl;
+	cout << n << " * 11 = " << k << endl;
+	cout << n << " * 12 = " << l << endl;
+
+	return 0;
+}

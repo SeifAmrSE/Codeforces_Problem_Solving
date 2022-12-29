@@ -1,0 +1,53 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int A=0,B=0,C=0;
+    string s;
+
+   for(int i=0;i<3;i++)
+   {
+       cin>>s;
+
+       if(s=="A<B" || s=="B>A")
+        A++;
+
+        else if(s=="A<C" || s=="C>A")
+        A++;
+
+        else if(s=="A>B" || s=="B<A")
+        B++;
+
+        else if(s=="C>B" || s=="B<C")
+        B++;
+
+        else if(s=="A>C" || s=="C<A")
+        C++;
+
+        else if(s=="B>C" || s=="C<B")
+        C++;
+   }
+
+   if(A>B && A>C && B>C)
+    cout<<"ABC"<<endl;
+
+   else if(B>A && B>C && A>C)
+    cout<<"BAC"<<endl;
+
+    else if(B>A && B>C && C>A)
+    cout<<"BCA"<<endl;
+
+    else if(C>A && C>B && B>A)
+    cout<<"CBA"<<endl;
+
+    else if(C>A && C>B && A>B)
+    cout<<"CAB"<<endl;
+
+    else if(A>B && A>C && C>B)
+    cout<<"ACB"<<endl;
+
+    else
+        cout<<"Impossible"<<endl;
+}

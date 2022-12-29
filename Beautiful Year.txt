@@ -1,0 +1,26 @@
+#include <iostream>
+#include<set>
+using namespace std;
+ 
+int main()
+{
+   int old_year,new_year;
+   cin>>old_year;
+   set<int>st;
+ 
+   do
+   {
+       st.clear();
+       old_year++;
+       new_year=old_year;
+ 
+       while(new_year)
+       {
+           st.insert(new_year%10);
+           new_year/=10;
+       }
+   }
+   while(st.size()!=4);
+ 
+   cout<<old_year<<endl;
+}

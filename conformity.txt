@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+	int t;
+	
+	while(cin>>t && t!=0)
+	{
+		
+	map<vector<int>,int>mp;
+	int mx=1;
+	
+	while(t--)
+	{
+		vector<int>v(5);
+		
+		for(int i=0;i<5;i++)
+		{
+			cin>>v[i];
+		}
+		
+		sort(v.begin(),v.end());
+		mp[v]++;
+		
+		mx = max(mx,mp[v]);
+	}
+	   int ans=0;
+	   
+	   for(auto it:mp)
+	   {
+	   	
+	   if(mx==mp[it.first])
+	   {
+	   	 ans += mp[it.first];
+	   }
+	   
+	   }
+	   cout<<ans<<"\n";
+	}
+}

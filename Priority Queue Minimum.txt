@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	priority_queue <int, vector<int> , greater<int> >pq;
+	string s;
+  int q,x;
+  
+  cin>>q;
+  
+  while(q--)
+  {
+  	cin>>s;
+  	
+  	if(s=="push")
+  	{
+  		cin>>x;
+  		pq.push(x);
+  	}
+  	
+  	else if(s=="pop")
+  	{
+  		pq.pop();
+  	}
+  	
+  	else if(s=="top")
+  	{
+  		cout<<pq.top()<<"\n";
+  	}
+  }
+}

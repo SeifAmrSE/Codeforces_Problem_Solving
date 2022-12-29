@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    vector<int>v;
+    int n,num;
+    cin>>n;
+    
+    for(int i=0;i<n;i++)
+    {
+        cin>>num;
+        v.push_back(num);
+    }
+    
+    sort(v.begin(),v.end());
+    
+    int st=0,en=v.size()-1,taxi=1;
+    
+    while(st != en)
+    {
+        if(v[st]+v[en]<=4)
+        {
+            v[en]+=v[st];
+            st++;
+        }
+        else
+        {
+            en--;
+            taxi++;
+        }
+    }
+    cout<<taxi<<endl;
+}

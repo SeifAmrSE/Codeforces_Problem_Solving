@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+   int x,a,b,c,d,e,f,g,h,i;
+   cin>>x;
+ 
+    a = x*2;
+    b = a*2;
+    c = b*2;
+    d = c*2;
+    e = d*2;
+    f = e*2;
+    g = f*2;
+    h = g*2;
+    i = h*2;
+ 
+    
+
+    
+ 
+        cout << "N[0] = " << x << endl;
+        cout << "N[1] = " << a << endl;
+        cout << "N[2] = " << b << endl;
+        cout << "N[3] = " << c << endl;
+        cout << "N[4] = " << d << endl;
+        cout << "N[5] = " << e << endl;
+        cout << "N[6] = " << f << endl;
+        cout << "N[7] = " << g << endl;
+        cout << "N[8] = " << h << endl;
+        cout << "N[9] = " << i << endl;
+
+    return 0;
+}

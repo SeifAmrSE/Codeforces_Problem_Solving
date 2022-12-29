@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	string s;
+	map<int,int>mp;
+	priority_queue<pair<int,int>>pq;
+	
+  while(cin>>s && s!="#")
+  {
+  	int id,ps;
+  	cin>>id>>ps;
+  	
+  	mp[id] = ps;
+  	
+  	pq.push(make_pair(-ps,-id));
+  }
+  
+  	int k;
+  	cin>>k;
+  
+  	while(k--)
+  	{
+  		int x = pq.top().second;
+  		
+  		cout<<-x<<endl;
+  		
+  		int y=pq.top().first;
+  		
+  		y -= mp[-x];
+  		
+  		pq.pop();
+  		
+  		pq.push(make_pair(y,x));
+  	}
+}

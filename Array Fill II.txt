@@ -1,0 +1,162 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int x;
+   cin>>x;
+if(x==1)
+{
+
+
+        cout << "N[0] = " << 0 << endl;
+        cout << "N[1] = " << 0 << endl;
+        cout << "N[2] = " << 0 << endl;
+        cout << "N[3] = " << 0 << endl;
+        cout << "N[4] = " << 0 << endl;
+        cout << "N[5] = " << 0 << endl;
+        cout << "N[6] = " << 0 << endl;
+        cout << "N[7] = " << 0 << endl;
+        cout << "N[8] = " << 0 << endl;
+        cout << "N[9] = " << 0 << endl;
+}
+        else if(x==2)
+{
+
+
+        cout << "N[0] = " << 0 << endl;
+        cout << "N[1] = " << 1 << endl;
+        cout << "N[2] = " << 0 << endl;
+        cout << "N[3] = " << 1 << endl;
+        cout << "N[4] = " << 0 << endl;
+        cout << "N[5] = " << 1 << endl;
+        cout << "N[6] = " << 0 << endl;
+        cout << "N[7] = " << 1 << endl;
+        cout << "N[8] = " << 0 << endl;
+        cout << "N[9] = " << 1 << endl;
+}
+        else if(x==3)
+{
+
+
+        cout << "N[0] = " << 0 << endl;
+        cout << "N[1] = " << 1 << endl;
+        cout << "N[2] = " << 2 << endl;
+        cout << "N[3] = " << 0 << endl;
+        cout << "N[4] = " << 1 << endl;
+        cout << "N[5] = " << 2 << endl;
+        cout << "N[6] = " << 0 << endl;
+        cout << "N[7] = " << 1 << endl;
+        cout << "N[8] = " << 2 << endl;
+        cout << "N[9] = " << 0 << endl;
+}
+        else if(x==4)
+{
+
+
+        cout << "N[0] = " << 0 << endl;
+        cout << "N[1] = " << 1 << endl;
+        cout << "N[2] = " << 2 << endl;
+        cout << "N[3] = " << 3 << endl;
+        cout << "N[4] = " << 0 << endl;
+        cout << "N[5] = " << 1 << endl;
+        cout << "N[6] = " << 2 << endl;
+        cout << "N[7] = " << 3 << endl;
+        cout << "N[8] = " << 0 << endl;
+        cout << "N[9] = " << 1 << endl;
+}
+        else if(x==5)
+{
+
+
+        cout << "N[0] = " << 0 << endl;
+        cout << "N[1] = " << 1 << endl;
+        cout << "N[2] = " << 2 << endl;
+        cout << "N[3] = " << 3 << endl;
+        cout << "N[4] = " << 4 << endl;
+        cout << "N[5] = " << 0 << endl;
+        cout << "N[6] = " << 1 << endl;
+        cout << "N[7] = " << 2 << endl;
+        cout << "N[8] = " << 3 << endl;
+        cout << "N[9] = " << 4 << endl;
+}
+        else if(x==6)
+{
+
+
+        cout << "N[0] = " << 0 << endl;
+        cout << "N[1] = " << 1 << endl;
+        cout << "N[2] = " << 2 << endl;
+        cout << "N[3] = " << 3 << endl;
+        cout << "N[4] = " << 4 << endl;
+        cout << "N[5] = " << 5 << endl;
+        cout << "N[6] = " << 0 << endl;
+        cout << "N[7] = " << 1 << endl;
+        cout << "N[8] = " << 2 << endl;
+        cout << "N[9] = " << 3 << endl;
+}
+        else if(x==7)
+{
+
+
+        cout << "N[0] = " << 0 << endl;
+        cout << "N[1] = " << 1 << endl;
+        cout << "N[2] = " << 2 << endl;
+        cout << "N[3] = " << 3 << endl;
+        cout << "N[4] = " << 4 << endl;
+        cout << "N[5] = " << 5 << endl;
+        cout << "N[6] = " << 6 << endl;
+        cout << "N[7] = " << 0 << endl;
+        cout << "N[8] = " << 1 << endl;
+        cout << "N[9] = " << 2 << endl;
+}
+        else if(x==8)
+{
+
+
+        cout << "N[0] = " << 0 << endl;
+        cout << "N[1] = " << 1 << endl;
+        cout << "N[2] = " << 2 << endl;
+        cout << "N[3] = " << 3 << endl;
+        cout << "N[4] = " << 4 << endl;
+        cout << "N[5] = " << 5 << endl;
+        cout << "N[6] = " << 6 << endl;
+        cout << "N[7] = " << 7 << endl;
+        cout << "N[8] = " << 0 << endl;
+        cout << "N[9] = " << 1 << endl;
+}
+        else if(x==9)
+{
+
+
+        cout << "N[0] = " << 0 << endl;
+        cout << "N[1] = " << 1 << endl;
+        cout << "N[2] = " << 2 << endl;
+        cout << "N[3] = " << 3<< endl;
+        cout << "N[4] = " << 4 << endl;
+        cout << "N[5] = " << 5 << endl;
+        cout << "N[6] = " << 6 << endl;
+        cout << "N[7] = " << 7 << endl;
+        cout << "N[8] = " << 8 << endl;
+        cout << "N[9] = " << 0 << endl;
+}
+        else if(x==10)
+{
+
+
+        cout << "N[0] = " << 0 << endl;
+        cout << "N[1] = " << 1 << endl;
+        cout << "N[2] = " << 2 << endl;
+        cout << "N[3] = " << 3 << endl;
+        cout << "N[4] = " << 4 << endl;
+        cout << "N[5] = " << 5 << endl;
+        cout << "N[6] = " << 6 << endl;
+        cout << "N[7] = " << 7 << endl;
+        cout << "N[8] = " << 8 << endl;
+        cout << "N[9] = " << 9 << endl;
+
+}
+
+    return 0;
+}

@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+#incldue <algorithm>
+using namespace std;
+
+int main()
+{
+    int cnt1=0,cnt2=0;
+   string s1,s2;
+   cin>>s1>>s2;
+
+   for(int i=0;i<s1.size();i++)
+   {
+       if(isalpha (s1[i]) && islower (s1[i]))
+       cnt1++;
+   }
+
+   for(int i=0;i<s2.size();i++)
+   {
+       if(isalpha(s2[i]) && islower (s2[i]))
+       cnt2++;
+   }
+
+   if(s1==s2)
+    cout<<-1<<endl;
+
+   else
+    cout<<max(cnt1,cnt2)<<endl;
+}

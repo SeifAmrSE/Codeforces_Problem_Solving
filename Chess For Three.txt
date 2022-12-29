@@ -1,0 +1,47 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n,winner,spect=3;
+    cin>>n;
+    bool f=1;
+
+    for(int i=0;i<n;i++)
+    {
+        cin>>winner;
+
+        if(winner==spect)
+            f=0;
+
+        if(winner==1)
+        {
+            if(spect==3)
+                spect=2;
+            else
+                spect=3;
+        }
+
+         else if(winner==2)
+        {
+            if(spect==1)
+                spect=3;
+            else
+                spect=1;
+        }
+        else
+         {
+            if(spect==2)
+                spect=1;
+            else
+                spect=2;
+        }
+
+    }
+    if(f==0)
+        cout<<"NO";
+    else
+        cout<<"YES";
+
+}

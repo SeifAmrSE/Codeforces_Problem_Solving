@@ -1,0 +1,38 @@
+#include <iostream>
+#include <vector>
+#include <utility>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+bool comp ( pair <string,int> i , pair <string,int> j)
+{
+    if(i.second==j.second)
+    
+    return i.first<j.first;
+
+    return i.second > j.second;
+}
+
+int main()
+{
+   vector < pair<string,int> > v;
+
+   string name;
+   int n,salary;
+
+   cin>>n;
+
+   for(int i=0;i<n;i++)
+   {
+       cin>>name>>salary;
+       v.push_back(make_pair(name,salary));
+   }
+
+   sort(v.begin(),v.end(),comp);
+
+   for(int i=0;i<n;i++)
+   {
+       cout<<v[i].first<<" "<<v[i].second<<endl;
+   }
+}

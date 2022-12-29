@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    bool space=false;
+    string s,s1="";
+    cin>>s>>s1;
+    
+    for(int i=0;i<s.size();)
+    {
+        if(s[i]=='W' && s[i+1]=='U' && s[i+2]=='B')
+        {
+            if(space==false)
+            {
+                s1+=" ";
+                i+=3;
+                space=true;
+            }
+            
+            else
+            {
+                i+=3;
+            }
+        }
+            else
+            {
+                s1+=s[i];
+                i++;
+                space=false;
+            }
+    }
+    
+    if(s1[0]==' ')
+     s1.erase(0,1);
+        cout<<s1<<endl;
+}

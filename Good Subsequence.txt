@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int pos=0;
+    string a,b;
+    cin>>a>>b;
+
+   if(b.size() > a.size())
+    cout<<"NO";
+
+   for(int i=0;i<b.size();i++)
+   {
+       pos=a.find(b[i],pos);
+       if(0>pos)
+       {
+        cout<<"NO";
+        return 0 ;
+       }
+
+   }
+
+   cout<<"YES";
+    return 0;
+}

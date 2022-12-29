@@ -1,0 +1,62 @@
+#include <iostream>
+#include <string>
+#include <set>
+using namespace std;
+
+int main()
+{
+   set<int>st;
+   set<int>::iterator it;
+   string s;
+   int q,x;
+   cin>>q;
+
+   while(q--)
+   {
+       cin>>s>>x;
+
+       if(s=="insert")
+       {
+           st.insert(x);
+       }
+
+       else if(s=="find")
+       {
+           it = st.find(x);
+
+           if(it==st.end())
+           {
+               cout<<"not found"<<endl;
+           }
+
+           else
+            cout<<"found"<<endl;
+       }
+
+       else if(s=="lower_bound")
+       {
+           it = st.lower_bound(x);
+
+           if(it==st.end())
+           {
+               cout<<-1<<endl;
+           }
+
+           else
+            cout<<*it<<endl;
+       }
+
+       else if(s=="upper_bound")
+       {
+           it = st.upper_bound(x);
+
+           if(it==st.end())
+           {
+               cout<<-1<<endl;
+           }
+
+           else
+            cout<<*it<<endl;
+       }
+   }
+}

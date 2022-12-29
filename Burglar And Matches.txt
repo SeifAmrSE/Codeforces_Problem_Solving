@@ -1,0 +1,36 @@
+#include <utility>
+#include <vector>
+using namespace std;
+
+bool cmp(pair<int,int>i,pair<int,int>j)
+{
+    return i.second > j.second;
+}
+
+int main()
+{
+   vector <pair<int,int> >v;
+   int n,m,a,b,cnt=0;
+   cin>>n>>m;
+    
+    for(int i=0;i<m;i++)
+    {
+        cin>>a>>b;
+        
+        v.push(make_pair(a,b));
+    }
+    
+    sort(v.begin(),v.end(),cmp);
+    
+    for(int i=0;i<v.size();i++)
+    {
+        if(v[i].first < n)
+            cnt+=(v[i].first * v[i].second);
+        n-=v[i].first;
+        
+        else
+            cnt+=n*v[i].second;
+             break;
+    }
+cout<<cnt<<endl;
+}

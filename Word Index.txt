@@ -1,0 +1,52 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+map<string,int>mp;
+
+void generatee()
+{
+	queue<string>q;
+
+   for(char c='a';c<='z';c++)
+   
+     q.push(string(1,c));
+   
+    string s;
+    int cnt=1;
+   
+   while(!q.empty())
+   {
+       s=q.front();
+       q.pop();
+       mp[s]=cnt;
+       cnt++;
+
+       if(s.size()==5)
+        continue;
+       
+       for(char c=s[s.size()-1]+1;c<='z';c++)
+           q.push(s+c);
+   }
+}
+
+int main()
+{
+	generatee();
+	
+    string s;
+    
+    map<string,int>::iterator it;
+    
+    while(cin>>s)
+    {
+      it=mp.find(s);
+      
+      if(it==mp.end())
+      cout<<0<<endl;
+      
+      else
+      cout<<it->second<<endl;
+    }
+    
+    return 0;
+}

@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int t,n;
+	int even = 0, odd = 0, pos = 0, neg = 0;
+	cin >> t;
+	while (t--)
+	{
+		cin >> n;
+		if (n % 2 == 0)
+			even++;
+
+		else if (n % 2 != 0)
+			odd++;
+
+		if (n > 0)
+			pos++;
+
+		else if (n < 0)
+			neg++;
+		
+	}
+	cout << "even is " << even << endl;
+	cout << "odd is " << odd << endl;
+	cout << "pos is " << pos << endl;
+	cout << "neg is " << neg << endl;
+}
