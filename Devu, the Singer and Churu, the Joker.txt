@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+	int n,mint,sum=0,t,ans=0;
+	cin>>n>>mint;
+	
+	for(int i=0;i<n;i++)
+	{
+		cin>>t;
+		sum+=t;
+	}
+	
+	if(sum + (n-1) * 10 > mint)
+	cout<<-1<<"\n";
+	
+	else
+	cout<<(mint-sum)/5<<"\n";
+}

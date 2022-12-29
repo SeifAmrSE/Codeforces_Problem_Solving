@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+  int a,b=0;
+  int n;
+  cin>>n;
+  
+  while(n--)
+  {
+  	cin>>a;
+  	b=0;
+  	
+  	for(int i=0;i<98;i++)
+  	{
+  	  	for(int j=0;j<97;j++)
+  	  	{
+           if(3*i + 7*j == a)
+           b++;
+  	  	}
+  	}
+  	if(b)
+  	cout<<"YES"<<"\n";
+  	
+  	else
+  	cout<<"NO"<<"\n";
+  	
+  }
+  
+}

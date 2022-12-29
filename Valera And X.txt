@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	set<char>a;
+	set<char>b;
+	
+	string s;
+	int n;
+	
+	cin>>n;
+	
+	for(int i=0;i<n;i++)
+	{
+		cin>>s;
+		
+		for(int j=0;j<n;j++)
+		{
+			if(i==j || i+j==n-1)
+				a.insert(s[j]);
+			
+			else
+			    b.insert(s[j]);
+		}
+	}
+	
+	if(*a.begin()!=*b.begin() && a.size()==1 && b.size()==1)
+	cout<<"YES"<<"\n";
+	
+	else
+	cout<<"NO"<<"\n";
+}

@@ -1,0 +1,56 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+  int n;
+  cin>>n;
+  int arr[n];
+  
+  for(int i=0;i<n;i++)
+  {
+  	cin>>arr[i];
+  }
+  
+  int left=0,cnt=0,cnt2=0,right=n-1;
+  
+  for(int i=0;i<n;i++)
+  {
+  	if(i%2==0)
+  	{
+  		if(arr[left] > arr[right])
+  		{
+  		cnt+=arr[left];
+  		left++;
+  		}
+  		
+  		else if(arr[left] < arr[right])
+  		{
+  		cnt+=arr[right];
+  		right--;
+  		}
+  		
+  		else if(arr[left]==arr[right])
+  		cnt+=arr[left];
+  	}
+  	
+  	else
+  	{
+  		if(arr[left] > arr[right])
+  		{
+  		cnt2+=arr[left];
+  		left++;
+  		}
+  		
+  		else if(arr[left] < arr[right])
+  		{
+  		cnt2+=arr[right];
+  		right--;
+  		}
+  		
+  		else if(arr[left]==arr[right])
+  		cnt2+=arr[left];
+  	}
+  }
+  cout<<cnt<<" "<<cnt2<<"\n";
+}

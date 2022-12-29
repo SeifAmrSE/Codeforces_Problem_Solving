@@ -1,0 +1,49 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{ 
+	long long n,m,q,nums;
+	cin>>n>>m>>q;
+	
+	vector<vector<long long>>matrix;
+	
+	matrix.push_back(vector<long long>(m,0));
+	
+	for(int i=1;i<=n;i++)
+	{
+		vector<long long>row;
+		row.push_back(0);
+		
+		for(int j=1;j<=m;j++)
+		{
+		   	cin>>nums;
+		   	row.push_back(nums);
+		}
+		matrix.push_back(row);
+	}
+	
+	for(int i=1;i<=n;i++)
+	{
+		for(int j=1;j<=m;j++)
+		{
+		 matrix[i][j] += matrix[i][j-1];  	
+		}
+	}
+	
+	for(int i=1;i<=m;i++)
+	{
+		for(int j=1;j<=n;j++)
+		{
+		 matrix[j][i] += matrix[j-1][i];  	
+		}
+	}
+	
+	while(q--)
+	{
+		long long i,j,k,l;
+		cin>>i>>j>>k>>l;
+		
+		cout<<matrix[k][l] - matrix[i-1][l] - matrix[k][j-1] + matrix[i-1][j-1]<<"\n";
+	}
+}

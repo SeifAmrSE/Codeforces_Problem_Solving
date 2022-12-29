@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+   int wakeup,sleep,a,wenttobed;
+   char c;
+   
+   cin>>wakeup>>c>>a;
+   
+   wakeup = 60 * wakeup + a;
+   
+   cin>>sleep>>c>>a;
+   
+   sleep = 60 * sleep + a;
+   
+   wenttobed = (wakeup - sleep  + 24*60) % (24*60);
+   
+   if(wenttobed / 60 < 10)
+   cout<<"0";
+   cout<<wenttobed / 60<<":";
+   
+   if(wenttobed % 60 < 10)
+   cout<<"0";
+   cout<<wenttobed % 60<<"\n";
+}

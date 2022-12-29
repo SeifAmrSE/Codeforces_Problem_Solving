@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+	int l,r,a,b,c,x,y,z;
+	cin>>l>>r>>a;
+	
+	x = (l+r+a)/2;
+	y = l+a;
+	z = r+a;
+	
+	b = min(y,z);
+	c = min(b,x);
+	
+	cout<<2*c<<"\n";
+}

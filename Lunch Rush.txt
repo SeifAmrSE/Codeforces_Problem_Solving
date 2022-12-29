@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+  int n,k,cnt=0,f,t,a,z=-100000005;
+  cin>>n>>k;
+  
+  while(n--)
+  {
+  	cin>>f>>t;
+  	
+  	if(t>=k)
+  	a = f-(t-k);
+  	
+  	else
+  	a=f;
+  	
+  	z=max(z,a);
+  }
+  
+  cout<<z<<"\n";
+}

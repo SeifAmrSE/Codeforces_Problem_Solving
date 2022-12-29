@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	bool arr[1000000];
+  int n,x,a;
+  cin>>n;
+  x=n;
+  
+  for(int i=0;i<n;i++)
+  {
+  	cin>>a;
+  	arr[a]=1;
+  	
+  	if(a==x)
+  	{
+  		for(int j=a;j>0;j--)
+  		{
+  			if(!arr[j])
+  				break;
+  				cout<<j<<" ";
+  				x = j-1;
+  		}
+  	}
+  	cout<<"\n";
+  }
+}

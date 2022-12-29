@@ -1,0 +1,27 @@
+#include <bits\stdc++.h>
+
+using namespace std;
+
+int main()
+{
+   string s,s2;
+   int q,cnt=0;
+
+   cin>>s>>q;
+
+   while(q--)
+   {
+       int l,r;
+       cin>>l>>r;
+
+       for(int i=0;i<s.size();i++)
+       {
+           s2 = s.substr(l,r);
+
+           if(s[i]=='a')
+            cnt++;
+       }
+
+      cout<<cnt<<"\n";
+   }
+}
